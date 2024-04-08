@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --dark-blue: #003566;
+    --light-blue: #00a8e8;
+    --dark-grey: #656565;
+    --light-grey: #e1e4ea;
+    --green: #219653;
+
+    --gap-1: 1rem;
+
+    --primary-color: var(--dark-blue);
+    --secondary-color: var(--light-blue);
+    --body-color: var(--dark-grey);
+}
