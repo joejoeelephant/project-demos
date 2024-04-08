@@ -73,7 +73,7 @@
 .header-container{
     display: flex;
     justify-content: space-between;
-    padding: var(--gap-1);
+    padding: 1rem;
     align-items: center;
 }
 
@@ -82,15 +82,16 @@
 }
 
 @media (min-width: 640px) {
+    .header-container {
+        padding-inline: 2rem;
+    }
     .header-container .header-home-link {
         display: flex;
     }
 }
 
 .header-left .logo {
-    font-size: 2.5rem;
-    font-weight: bolder;
-    color: orange;
+    display: block;
 }
 
 .header-right {
@@ -100,8 +101,8 @@
 }
 
 .main-content {
-    padding-top: 8rem;
-    padding-inline: var(--gap-1);
+    padding-top: 6rem;
+    padding-inline: 1rem;
     padding-bottom: 6rem;
     display: flex;
     flex-direction: column;
@@ -316,6 +317,30 @@ input.input-middle {
 
 /* //width */
 
+/* select */
+.default-select {
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid var(--light-grey);
+    outline: 0;
+    cursor: pointer;
+    background-color: white;
+    font-size: 1rem;
+    display: flex;
+    gap: 0.25rem;
+}
+
+.default-select .select-icon {
+    width: 1rem;
+}
+
+.default-select select {
+    background-color: white;
+    border: 0;
+    font-size: 1rem;
+}
+/* //select */
+
 /* button */
 
 .default-button {
@@ -325,6 +350,7 @@ input.input-middle {
     outline: 0;
     cursor: pointer;
     background-color: white;
+    font-size: 1rem;
 }
 
 .default-button,.icon {
