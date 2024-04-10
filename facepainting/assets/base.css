@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    /* color */
+    --purple: #591B69;
+    --dark-grey: #5B5B5B;
+
+    --primary-color: var(--purple);
+    --content-color: var(--dark-grey);
+    /* end color */
+
+    /* font-properties */
+    --heading-weight: 600;
+    --heading-size: 22px;
+    --content-size: 16px;
+    /* end font-properties */
+    
+}
+
+@media (min-width: 640px) {
+    :root {
+        --heading-weight: 600;
+        --heading-size: 35px;
+        --content-size: 18px;
+    }
+}
+
+/* text css */
+.text-heading-size {
+    font-size: var(--heading-size);
+}
+
+.text-heading-weight {
+    font-weight: var(--heading-weight);
+}
+
+.text-content-size {
+    font-size: var(--content-size);
+}
+
+.text-white {
+    color: white;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-content-color {
+    color: var(--content-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* end text css */
+
+
+/* width variables */
+
+.w-4 {
+    width: 1rem;
+}
+
+/* end width varibles */
+
+
+/* flow variables */
+.flow-half>*+* {
+    margin-top: 0.5rem;
+}
+/* end flow  variables*/
+
+/* margin */
+
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.mt-6 {
+    margin-top: 24px;
+}
+
+/* end margin */
+

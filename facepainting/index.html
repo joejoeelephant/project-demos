@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="./assets/base.css">
+    <link rel="stylesheet" href="./assets/layout.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <main>
+        <div class="hero-container">
+            <div class="logo">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+
+            <div class="text-center text-white">
+                <h1 class="hero-title">
+                    Charlottesville
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="hero-subtitle-icon">
+                        <img src="./assets/white-star.png" alt="white-star">
+                    </span>
+                    <span>Face Painting</span>
+                    <span class="hero-subtitle-icon">
+                        <img src="./assets/white-star.png" alt="white-star">
+                    </span>
+                </div>
+            </div>
+        </div>
+        <section class="section-container about-container">
+            <div class="about-content">
+                <div class="about-text-container">
+                    <h3 class="text-primary text-heading-size text-heading-weight text-center">
+                        About Us
+                    </h3>
+                    <p class="text-content-color text-content-size about-text-content">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Et delectus maxime vitae, eaque provident esse similique ex, 
+                        iusto culpa libero cumque ratione autem nesciunt eum omnis aspernatur optio soluta voluptate! Animi, repellendus?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Et delectus maxime vitae, eaque provident esse similique ex, 
+                        iusto culpa libero cumque ratione autem nesciunt eum omnis aspernatur optio soluta voluptate! Animi, repellendus?
+                    </p>
+                </div>
+                <div class="about-swiper-container">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/swiper.png" alt="hero">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/swiper.png" alt="hero">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-container contact-container">
+            <div class="contact-content">
+                <div class="contact-form text-content-size text-primary">
+                    <h3 class="text-primary text-heading-size text-heading-weight text-center">
+                        Contact Us
+                    </h3>
+                    <form action="#" class="flow-half mt-4">
+                        <div>
+                            <input type="text" class="input-text" placeholder="Full name">
+                        </div>
+                        <div>
+                            <input type="text" class="input-text" placeholder="Email">
+                        </div>
+                        <div>
+                            <input type="text" class="input-text" placeholder="Phone Number">
+                        </div>
+                        <div>
+                            <textarea class="input-textarea" rows="5" placeholder="Enter your text here..."></textarea>
+                        </div>
+
+                        <div class="primary-button mt-6">
+                            Send
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-image">
+                    <img src="./assets/hero.png" alt="contact-img">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="section-container footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./assets/logo.png" alt="logo">
+            </div>
+            <div class="footer-copyright">
+                <div class="footer-icon">
+                    C
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>
+</html>
